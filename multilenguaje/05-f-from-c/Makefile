@@ -1,7 +1,7 @@
 .PHONY: default help object executable all clean
 FC = gfortran
 CC = gcc
-LD = $(FC)
+LD = $(CC)
 
 SOURCE_F = $(wildcard *.f90)
 OBJECTS_F = $(patsubst %.f90, %_f90.o, $(SOURCE_F))
